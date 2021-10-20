@@ -6,7 +6,7 @@ import org.keycloak.storage.UserStorageProviderFactory;
 
 public class CustomStorageProviderFactory implements UserStorageProviderFactory<CustomStorageProvider> {
 
-    public static final String PROVIDER_NAME = "hashmap-user-store";
+    public static final String PROVIDER_NAME = "custom-user-store";
     CustomUserStore userStore = new CustomUserStore();
 
     @Override
